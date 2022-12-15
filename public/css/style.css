@@ -35,7 +35,7 @@ body{
     border-radius: 20px;
 }
 /*-----------section 1-----------------*/
-#container-section1{
+#sectionMain{
     background-image: linear-gradient(rgba(5,7,12,0.4), rgba(5,7,12,0.4)),url("../img/fondo-section.jpg");
     background-size: cover;
     opacity: 0,5;
@@ -93,17 +93,19 @@ body{
 }
 
 /*--------------section 2-----------------*/
-#container-section2{
-    margin-top: 10rem;
+#Servicio{
+    width: 100vw;
+    height: 100vh;
 }
 #container-servicio{
+    height: 100vh;
+    margin: auto;
     display: flex;
     flex-direction: row;
     font-family: var(--font-family);
     font-size: 10% !important;
     text-align: center;
     padding: 0;
-    width: 100%;
 }
 #container-servicio li{
     margin: auto;
@@ -124,17 +126,20 @@ body{
     font-weight: bold;
 }
 /*--------------section 3--------------*/
-#container-section3{
+#Nosotros{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+#containerNosotros{
     background: #000;
-    margin-top: 10rem;
-    margin-bottom: 10rem;
     width: 100%;
     height: 20rem;
     padding: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 .tituloNosotros{
     font-family: var(--font-family);
@@ -156,10 +161,114 @@ body{
     text-align: left;
     margin-left: 2rem;
 }
+/*--------Form Contacto------------*/
+#Contacto{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#container{
+    width: 40vw;
+    height: 60vh;
+    padding: 3%;
+    background: linear-gradient(to right, #c06c84 , #493240);
+    border-radius: 0 2% 2% 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#container input,textarea{
+    margin: 2%;
+    width: 100%;
+}
+#containerTitle{
+    width: 25vw;
+    height: 60vh;
+    padding: 2%;
+    background-color: #9A1663;
+    color: #E8C4C4;
+    border-radius: 2% 0 0 2%;
+    display: flex;
+    align-items: center;
+}
 /*----------Footer-----------------*/
-.container-footer{
+#container-footer{
+    margin-top: 3%;
     background-color: #be8686;
     height: 15rem;
+}
+#container-footer img{
+    width: 100%;
+}
+#container-footer li{
+    width: 4%;
+    margin: 0 2% 0 0;
+
+}
+
+/*-----------Form register/singIn---------*/
+#body{
+    background: linear-gradient( 45deg, #594e72, #c06c84);
+    display: flex;
+    justify-content: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+#container-form{
+    width: 39%;
+    height: 70vh;
+    margin-top: 15vh;
+    background-color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 21px 31px 7px 0px rgba(0,0,0,0.1);
+    border-radius: 2rem;
+}
+#container-form input{
+    width: 80%;
+    margin-bottom: 4%;
+}
+#titleRegister, #textRegister{
+    text-align: center;
+}
+#textRegister{
+    font-size: 90%;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 4%;
+}
+#titleRegister{
+    margin-top: 2%;
+}
+#containerSingIn{
+    width: 39%;
+    height: 60vh;
+    margin-top: 15vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 21px 31px 7px 0px rgba(0,0,0,0.1);
+    border-radius: 2rem;
+}
+#containerSingIn input{
+    width: 80%;
+    margin-bottom: 4%;
+}
+#titleSesion{
+    margin-bottom: 5%;
+}
+#buttonRegister, #buttonSesion{
+    width: 80%;
+    margin-bottom: 3%;
+}
+#linkForm{
+    text-decoration: none;
 }
 
 

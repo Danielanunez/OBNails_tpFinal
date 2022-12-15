@@ -1,13 +1,16 @@
 <%- include('partials/head')%>
-<body>
-    <h2>Registráte</h2>
-    <p>Vas a poder agendar tu turno, conocer nuestros distintos servicios y promociones</p>
-    <form action="" method="post">
-        <input type="text" name="name" id="" placeholder="Nombre">
-        <input type="text" name="firstName" id="" placeholder="Apellido">
-        <input type="email" name="email" id="" placeholder="Email">
-        <input type="password" name="password" id="" placeholder="Contraseña">
-        <button type="submit" class="btn btn-success">Registrarme</button>
-    </form>
-</body>
-</html>
+
+    <body id="body">
+        <form action="" method="post" id="container-form">
+            <h2 id="titleRegister">Registro de usuario</h2>
+            <p id="textRegister">Vas a poder agendar tu turno, conocer nuestros distintos servicios y promociones</p>
+            <input type="text" name="name" id="" placeholder="Nombre">
+            <input type="text" name="firstName" id="" placeholder="Apellido">
+            <input type="email" name="email" id="" placeholder="Email">
+            <input type="password" name="password" id="" placeholder="Contraseña">
+            <button type="submit" class="btn btn-success" id="buttonRegister">Registrar</button>
+            <a href="/singIn/" id="linkForm">Ya tengo cuenta</a>
+        </form>
+    </body>
+
+    </html>

@@ -1,17 +1,18 @@
 <%- include('partials/nav')%>
     <main id="main">
-        <section id="container-section1">
+        <section id="sectionMain">
             <div id="container-tittle">
                 <h1 id="title-section1">¡Uñas hermosas a toda hora!</h1>
                 <span id="subtittle-section1">Profesionales en Manicure y Pedicure</span>
                 <div id="containerButtons">
-                    <a id="boton1-section1" href="#">Inicio Sesion</a>
+                    <a id="boton1-section1" href="/singIn/">Inicio Sesion</a>
                     <a id="boton2-section1" href="/register/">Registrate</a>
                 </div>
 
             </div>
         </section>
-        <section id="container-section2">
+
+        <section id="Servicio">
             <ul id="container-servicio">
                 <li id="servicio">
                     <h5 class="tituloServicio">ESMALTADO</h5>
@@ -31,20 +32,44 @@
                 </li>
             </ul>
         </section>
-        <section id="container-section3">
-            <div id="container-tituloNosotros">
-                <h2 class="tituloNosotros">SOMOS</h2>
-                <img src="./img/Logotipo_blanco.png" alt="Logo OBNails color blanco" id="logoNosotros"></img>
-            </div>
 
-            <p id="textoNosotros">En la actualidad el cuidado de las uñas se ha convertido
-                en una necesidad más allá de un metódo cosmético, cada vez más personas toman
-                con seriedad la elección del lugar donde van a realizarse dicho tratamiento. En "OB NAILS manicure and
-                pedicure"
-                contamos con más de 5 años de experiencia, personal capacitado profecionalmente en manicure y pedicure,
-                ofreciendo un
-                servicio calificado y con total seriedad.
-            </p>
+        <section id="Nosotros">
+            <article id="containerNosotros">
+                <div id="container-tituloNosotros">
+                    <h2 class="tituloNosotros">SOMOS</h2>
+                    <img src="./img/Logotipo_blanco.png" alt="Logo OBNails color blanco" id="logoNosotros"></img>
+                </div>
+                <p id="textoNosotros">En la actualidad el cuidado de las uñas se ha convertido
+                    en una necesidad más allá de un metódo cosmético, cada vez más personas toman
+                    con seriedad la elección del lugar donde van a realizarse dicho tratamiento. En "OB NAILS manicure
+                    and
+                    pedicure"
+                    contamos con más de 5 años de experiencia, personal capacitado profecionalmente en manicure y
+                    pedicure,
+                    ofreciendo un
+                    servicio calificado y con total seriedad.
+                </p>
+            </article>
+        </section>
+
+        <section id="Contacto">
+            <div id="containerTitle">
+                <div id="containerTitle2">
+                    <h2 id="titleContacto">Contáctanos</h2>
+                    <p id="textContacto">Puedes envíarnos tu consulta o simplemente dejar algún comentario</p>
+                </div>
+
+            </div>
+            <div id="containerForm">
+                <form action="" method="post" id="container">
+                    <input type="text" name="name" id="controlls" placeholder="Nombre">
+                    <input type="text" name="firstName" id="" placeholder="Apellido">
+                    <input type="email" name="email" id="" placeholder="Email">
+                    <textarea name="textArea" rows="5" placeholder="Tu Mensaje.."></textarea>
+                    <button type="submit" class="btn btn-dark" id="buttonContacto">Envar</button>
+                </form>
+            </div>
         </section>
     </main>
-<%- include('partials/footer')%>
+
+    <%- include('partials/footer')%>
